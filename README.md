@@ -16,10 +16,10 @@ The following opcodes are implemented
 | 04h  | Increment input-1|
 | 14h  | Decrement input-1|
 | 24h  | Add input-1 and input-2|
-| 94h  |UBB --subtract input-2 from input-1
+| 94h  | Subtract input-2 from input-1
 
 
 |opcode| instruction |
 |------|-------------|
-03h - RRA --rotate right A
-23h - RLA --rotate left A
+| 03h  | Rotate right input-1| 
+| 23h  | Rotate left input-1|
