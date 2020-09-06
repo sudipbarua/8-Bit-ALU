@@ -6,6 +6,7 @@ The design consists of 4 components-
 4. A Decoder to be used as a output-enable and select between arithmatic and rotaion operation.
 
 ![ALU-8](https://github.com/sudipbarua/8-Bit-ALU/blob/master/ALU.JPG)
+      
       Fig: Block diagram of ALU.
 
 ## [Aritmatic and Logic Operation Component](https://github.com/sudipbarua/8-Bit-ALU/blob/master/al8.vhd)
@@ -34,4 +35,5 @@ This component allows the connection of 8bit busses to a common bidirectional bu
 is low (low ative), otherwise it sets the ouput to high impedance and frees the bus so that other members can write. 
 
 ![BUF8](https://github.com/sudipbarua/8-Bit-ALU/blob/master/BUF8.JPG)
+      
       Fig: Tristate buffer.
