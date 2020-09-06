@@ -5,8 +5,11 @@ The design consists of 4 components-
 3. Two [tristate Buffers](https://github.com/sudipbarua/8-Bit-ALU/blob/master/buffer.vhd) to connect the two components to the output.
 4. A Decoder to be used as a output-enable and select between arithmatic and rotaion operation.
 
+![ALU-8](https://github.com/sudipbarua/8-Bit-ALU/blob/master/ALU.JPG)
+      Fig: Block diagram of ALU.
+
 ## [Aritmatic and Logic Operation Component](https://github.com/sudipbarua/8-Bit-ALU/blob/master/al8.vhd)
-The following opcodes are implemented 
+The following opcodes are implemented here
 
 |opcode| instruction |
 |------|-------------|
@@ -18,8 +21,17 @@ The following opcodes are implemented
 | 24h  | Add input-1 and input-2|
 | 94h  | Subtract input-2 from input-1
 
+## [Shift register](https://github.com/sudipbarua/8-Bit-ALU/blob/master/rt8.vhd)
+The following opcodes are implemented here
 
 |opcode| instruction |
 |------|-------------|
 | 03h  | Rotate right input-1| 
 | 23h  | Rotate left input-1|
+
+## [Tristate Buffers](https://github.com/sudipbarua/8-Bit-ALU/blob/master/buffer.vhd)
+This component allows the connection of 8bit busses to a common bidirectional bus. The component should drives signal A to output Y if OEn (output enable)
+is low (low ative), otherwise it sets the ouput to high impedance and frees the bus so that other members can write. 
+
+![BUF8](https://github.com/sudipbarua/8-Bit-ALU/blob/master/BUF8.JPG)
+      Fig: Tristate buffer.
